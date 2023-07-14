@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@100;200;300;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/11e289fd06.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Mobile Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--beginning of navigation-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#"><h4>Bookery</h4></a>
+            <ul class="navbar-nav me-auto mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#bestsellers"
+                  >Bestsellers</a
+                >
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#audiobooks"
+                  >Audiobooks</a
+                >
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#booktok"
+                  >#Booktok</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#staff-picks"
+                  >Staff Picks</a
+                >
+              </li>
+            </ul>
+          </div>
+          <ul id="nav-icons-ul">
+            <li class="nav-icons nav-link">
+              <a href="#">
+                <i class="fa-solid fa-bookmark"></i>
+              </a>
+            </li>
+            <li class="nav-icons nav-link">
+              <a href="#">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--end of Navigation-->
+      <main>
+        <div id="hero">
+          <div class="input-icon">
+            <input
+              type="search"
+              class="input-field"
+              placeholder="Titles, author, or topics"
+            />
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+          </div>
+          <h1>New & Trending</h1>
+          <div>
+            <span id="hero-imgs">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/889/original/fourth-wing-bkcover.jpg?1689369270"
+                    class="shadow"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/891/original/house-of-sky-breath-bkcover.jpg?1689369368"
+                    class="shadow"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/890/original/day-of-fallen-night-bkcover.jpg?1689369280"
+                    class="shadow"
+                  />
+                </div>
+              </div>
+            </span>
+            <div class="shelf"></div>
+            <div class="shelf-2"></div>
+          </div>
+        </div>
+      </main>
+      <!--end of HERO-->
+      <section id="audiobooks"></section>
+      <!-- end of AUDIOBOOKS-->
+      <section id="slider" id="booktok">
+        <h1>#Booktok</h1>
+        <div class="container">
+          <div class="subcontainer">
+            <div class="slider-wrapper" id="booktok-section">
+              <br />
+              <div class="my-slider">
+                <div>
+                  <div class="slide">
+                    <div class="slide-img img-3">
+                      <a
+                        href="https://www.goodreads.com/book/show/62649010-house-of-roots-and-ruin?ref=nav_sb_ss_1_23"
+                        alt="Book: House of Roots and Ruins by Erin A. Craig"
+                        title="Goodreads rating"
+                      >
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                      ></a>
+                    </div>
+                    <br />
+                  </div>
+                </div>
+
+                <div>
+                  <div class="slide">
+                    <div class="slide-img img-5">
+                      <a
+                        href="https://www.goodreads.com/book/show/57789637-daughter-of-the-moon-goddess?ref=nav_sb_noss_l_22"
+                        alt="Book: Daughter of the Moon Goddess by Sue Lynn Tan"
+                        title="Goodreads rating"
+                      >
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></a>
+                    </div>
+                    <br />
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <div class="slide-img img-6">
+                      <a
+                        href="https://www.goodreads.com/book/show/13623848-the-song-of-achilles?from_search=true&from_srp=true&qid=c9uI9puNOv&rank=1"
+                        alt="Book: The Song of Achilles by Madeline Miller"
+                        title="Goodreads rating"
+                      >
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></a>
+                    </div>
+                    <br />
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <div class="slide-img img-7">
+                      <a
+                        href="https://www.goodreads.com/book/show/52578297-the-midnight-library?from_search=true&from_srp=true&qid=eRHkFEZuEs&rank=1"
+                        alt="Book: The Midnight Library by Matt Haig"
+                        title="Goodreads rating"
+                      >
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></a>
+                    </div>
+                    <br />
+                  </div>
+                </div>
+
+                <div>
+                  <div class="slide">
+                    <div class="slide-img img-8">
+                      <a
+                        href="https://www.goodreads.com/book/show/60784546-divine-rivals?ac=1&from_search=true&qid=IlMXprvUxW&rank=1"
+                        alt="Book: Divine Rivals by Rebecca Ross"
+                        title="Goodreads rating"
+                      >
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></a>
+                    </div>
+                    <br />
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <div class="slide-img img-9">
+                      <a href="" alt="" title="Goodreads rating">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></a>
+                    </div>
+                    <br />
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <div class="slide-img img-10">
+                      <a href="" alt="" title="Goodreads rating">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></a>
+                    </div>
+                    <br />
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <div class="slide-img img-11">
+                      <a href="" alt="" title="Goodreads rating">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></a>
+                    </div>
+                    <br />
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <div class="slide-img img-12">
+                      <a href="" alt="" title="Goodreads rating">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></a>
+                    </div>
+                    <br />
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <div class="slide-img img-1">
+                      <a
+                        href="https://www.goodreads.com/book/show/63219094-fourth-wing"
+                        alt="Book: Fourth Wing by Rebecca Yarros"
+                        title="Goodreads rating"
+                      >
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                      ></a>
+                    </div>
+                    <br />
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <div class="slide-img img-2">
+                      <a
+                        href="https://www.goodreads.com/book/show/60766189-a-day-of-fallen-night?ref=nav_sb_noss_l_14"
+                        alt="Book: Day of the Fallen by Samantha Shannon"
+                        title="Goodreads rating"
+                      >
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                      ></a>
+                    </div>
+                    <br />
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <div class="slide-img img-4">
+                      <a
+                        href="https://www.goodreads.com/book/show/40132775-house-of-sky-and-breath?from_search=true&from_srp=true&qid=dUgAz9xk1R&rank=1"
+                        alt="Book: House of Sky and Breath by Sarah J. Maas"
+                        title="Goodreads rating"
+                      >
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                      ></a>
+                    </div>
+                    <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shelf"></div>
+        <div class="shelf-2"></div>
+      </section>
+      <!-- end of BOOKTOK -->
+      <!---staff-picks section-->
+      <section id="staff-picks">
+        <h1>Staff Picks</h1>
+        <div class="container">
+          <div class="staff-picks">
+            <a
+              href="https://www.goodreads.com/book/show/60784546-divine-rivals?ac=1&from_search=true&qid=IlMXprvUxW&rank=1"
+              alt="Book: Divine Rivals by Rebecca Ross"
+              title="Goodreads rating"
+              ><img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/895/original/divine-rivals-bkcover.jpg?1689369471"
+              />
+            </a>
+          </div>
+          <div class="staff-picks">
+            <a
+              href="https://www.goodreads.com/book/show/59112722-for-the-throne"
+              alt="Book: For the Throne by Hannah Whitten"
+              title="Goodreads rating"
+              ><img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/896/original/for-the-throne-bkcover.jpg?1689369502"
+              />
+            </a>
+          </div>
+          <div class="staff-picks">
+            <a
+              href="https://www.goodreads.com/book/show/51888648-gilded-serpent?ac=1&from_search=true&qid=8t0xu4Uyo2&rank=1"
+              alt="Book: Gilded Serpent by Danielle L. Jensen"
+              title="Goodreads rating"
+              ><img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/899/original/gilded-serpent-bkcover.jpg?1689369844"
+              />
+            </a>
+          </div>
+          <div class="shelf"></div>
+          <div class="shelf-2"></div>
+        </div>
+      </section>
+      <!--end of staff-picks section-->
+    </div>
+    <footer>
+      <div>
+        <a href="https://www.linkedin.com/in/doyonlaura"
+          ><i class="fa-brands fa-linkedin coder-social"></i
+        ></a>
+        <a href="https://github.com/L-itslocked"
+          ><i class="fa-brands fa-github coder-social"></i
+        ></a>
+        <a href="https://codepen.io/Itslocked" target="_blank">
+          <i class="fa-brands fa-codepen coder-social"></i>
+        </a>
+      </div>
+      <a href="">Open-source code</a> by Laura Doyon
+    </footer>
+  </body>
+  <script src="script.js">
+    let slider = tns({
+      container: ".my-slider",
+      slideBy: "1",
+      speed: 400,
+      nav: false,
+      autoplay: true,
+      controls: false,
+      arrowKey: true,
+      autoplayButtonOutput: false,
+      autoplayHoverPause: true,
+      responsive: {
+        1600: {
+          items: 4,
+          gutter: 10,
+        },
+        1024: {
+          items: 4,
+          gutter: 10,
+        },
+        768: {
+          items: 3,
+          gutter: 10,
+        },
+        480: {
+          items: 2,
+          gutter: 10,
+        },
+      },
+    });
+  </script>
+</html>
