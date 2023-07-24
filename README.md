@@ -50,7 +50,7 @@ I learned how to create bookshelves with css styling. This is my first attempt a
 
 ### Useful Resources
 
-[Web Dev Tutorials] (https://www.youtube.com/watch?v=cmlkB3oaKOQ)
+[Web Dev Tutorials - Create a Multi Item Image Carousel (w/ Tiny Slider)](https://www.youtube.com/watch?v=cmlkB3oaKOQ)
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew
 
@@ -68,13 +68,13 @@ https://dribbble.com/shots/16279204-Book-Web-Store-Concept
 
 https://dribbble.com/shots/16246812-Book-Store-Mobile-App
 
-[mburnette] https://codepen.io/mburnette/pres/kGYmvR/right
+[@mburnette](https://codepen.io/mburnette/pres/kGYmvR/right)
 
-[annampawl] https://codepen.io/annampawl/pen/rNJjowd
+[@annampawl](https://codepen.io/annampawl/pen/rNJjowd)
 
 ## Author
 
 - Website - [Laura Doyon](https://lauradoyon.netlify.app/)
-- CodePen - [@Itslocked]
+- CodePen - [@Itslocked](https://codepen.io/itslocked)
 - Frontend Mentor - [@L-itslocked](https://www.frontendmentor.io/profile//L-itslocked)
 - LinkedIn - [@doyonlaura](https://www.linkedin.com/in/doyonlaura)
