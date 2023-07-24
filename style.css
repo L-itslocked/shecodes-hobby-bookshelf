@@ -1,265 +1,275 @@
-<style>
-      :root {
-        --main-font: "Libre Caslon Text", serif;
-        --accent-font: "Montserrat", sans-serif;
-        --primary-color: #f8f3ee;
-        --shelf-color: #e6ddce;
-        --accent-color: #daaa63;
-        --secondary-color: #2c1810;
-        --background-color: #f3e5d0;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-      }
+<style > :root {
+  --main-font: "Libre Caslon Text", serif;
+  --accent-font: "Montserrat", sans-serif;
+  --primary-color: #f8f3ee;
+  --shelf-color: #e6ddce;
+  --accent-color: #daaa63;
+  --secondary-color: #2c1810;
+  --background-color: #f3e5d0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
 
-      body {
-        margin: 15px;
-        background-color: var(--primary-color);
-      }
-      nav h4 {
-        font-family: var(--main-font);
-        font-size: 12px;
-        margin: 10px 0 -25px;
-      }
-      nav .nav-item {
-        font-family: var(--accent-font);
-      }
-      ul {
-        list-style: none;
-      }
-      li {
-        text-decoration: none;
-        display: block;
-        margin: 0 auto;
-      }
-      h1 {
-        font-family: var(--main-font);
-        color: var(--secondary-color);
-        font-size: 18px;
-        margin-top: 2rem;
-        margin-bottom: 18px;
-        padding: 2rem auto;
-      }
-      input {
-        display: block;
-        margin: 0 auto;
-        width: 80vw;
-        border-radius: 30px;
-        padding: 1rem;
-        text-align: center;
-        color: gray;
-      }
-      input:focus {
-        color: var(--secondary-color);
-      }
-      input::placeholder {
-        font-family: var(--accent-font);
-        font-size: 12px;
-      }
-      footer {
-        text-align: right;
-        color: var(--secondary-color);
-        margin: 3rem 1rem 1rem 0;
-        font-size: 11px;
-      }
-      footer a {
-        color: darkslateblue;
-        text-decoration: none;
-      }
-      footer i {
-        font-size: 1.5rem;
-      }
-      footer a:hover {
-        color: var(--accent-color);
-      }
-      .navbar-brand {
-        margin-top: -4%;
-      }
+body {
+  margin: 15px;
+  background-color: var(--primary-color);
+}
+nav h4 {
+  font-family: var(--main-font);
+  font-size: 12px;
+  margin: 10px 0 -25px;
+}
+nav .nav-item {
+  font-family: var(--accent-font);
+}
+ul {
+  list-style: none;
+}
+li {
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  font-family: var(--main-font);
+  color: var(--secondary-color);
+  font-size: 18px;
+  margin-top: 2rem;
+  margin-bottom: 18px;
+  padding: 2rem auto;
+}
+input {
+  display: block;
+  margin: 0 auto;
+  width: 80vw;
+  border-radius: 30px;
+  padding: 1rem;
+  text-align: center;
+  color: gray;
+}
+input:focus {
+  color: var(--secondary-color);
+}
+input::placeholder {
+  font-family: var(--accent-font);
+  font-size: 12px;
+}
+footer {
+  text-align: right;
+  color: var(--secondary-color);
+  margin: 3rem 1rem 1rem 0;
+  font-size: 11px;
+}
+footer a {
+  color: darkslateblue;
+  text-decoration: none;
+}
+footer i {
+  font-size: 1.5rem;
+}
+footer a:hover {
+  color: var(--accent-color);
+}
+.navbar-brand {
+  margin-top: -4%;
+}
 
-      .title-col p {
-        visibility: hidden;
-      }
-      /* .navbar-collapse, */
-      .navbar-toggler,
-      .navbar-expand-lg {
-        background-color: transparent;
-        text-align: left;
-        font-size: 12px;
-        color: var(--accent-color);
-        border: none;
-      }
+.title-col p {
+  visibility: hidden;
+}
+/* .navbar-collapse, */
+.navbar-toggler,
+.navbar-expand-lg {
+  background-color: transparent;
+  text-align: left;
+  font-size: 12px;
+  color: var(--accent-color);
+  border: none;
+}
 
-      .navbar-toggler:focus {
-        color: gray;
-      }
-      .nav-item {
-        text-align: left;
-      }
-      .nav-icons {
-        display: inline-block;
-        margin: 0 auto;
-        padding: 0 0.2rem;
-      }
-      .nav-icons a {
-        color: gray;
-      }
-      .input-icon i {
-        position: absolute;
-      }
+.navbar-toggler:focus {
+  color: gray;
+}
+.nav-item {
+  text-align: left;
+}
+.nav-icons {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 0.2rem;
+}
+.nav-icons a {
+  color: gray;
+}
+.input-icon i {
+  position: absolute;
+}
 
-      .input-icon {
-        width: 100%;
-      }
+.input-icon {
+  width: 100%;
+}
 
-      .icon {
-        color: gray;
-        min-width: 50px;
-        margin-top: -37px;
-        margin-left: 40px;
-        font-size: 18px;
-      }
+.icon {
+  color: gray;
+  min-width: 50px;
+  margin-top: -37px;
+  margin-left: 40px;
+  font-size: 18px;
+}
 
-      /*shelf styling*/
-      .shelf {
-        background-color: var(--shelf-color);
-        display: flex;
-        transform: skew(-55deg, 10.5turn);
-        margin: 0 0 0 -10px;
-        width: 100vw;
-        height: 20px;
-        box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.216);
-        overflow: hidden;
-        z-index: 1;
-      }
-      .shelf-2 {
-        background-image: linear-gradient(
-          var(--primary-color) 10% 20%,
-          #f4f0eb 70% 100%
-        );
-        z-index: 3;
-        width: 100vw;
-        height: 10px;
-        margin: 0 0 0 -24px;
-        box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.23);
-        overflow: hidden;
-      }
-      /*image styling for bookshelf*/
-      .slide-img,
-      .staff-picks img,
-      #hero-imgs img {
-        width: 150px !important;
-        height: auto;
-        z-index: 3;
-        box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.23);
-        position: relative;
-        display: inline-block;
-        border-radius: 2px 7px 7px 2px;
-      }
-      .slide-img img {
-        position: relative;
-        z-index: 4;
-      }
-      #hero-imgs img {
-        margin: 10px 0 -15px 10px;
-        transform: scale3d(1, 1, 1);
-        transition: 400ms ease-in;
-        transform-origin: 0, 50%;
-        transform: perspective(500) rotateY(10deg);
-        transition: 0.5s;
-      }
+/*shelf styling*/
+.shelf {
+  background-color: var(--shelf-color);
+  display: flex;
+  transform: skew(-55deg, 10.5turn);
+  margin: 0 0 0 -10px;
+  width: 100vw;
+  height: 20px;
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.216);
+  overflow: hidden;
+  z-index: 1;
+}
+.shelf-2 {
+  background-image: linear-gradient(
+    var(--primary-color) 10% 20%,
+    #f4f0eb 70% 100%
+  );
+  z-index: 3;
+  width: 100vw;
+  height: 10px;
+  margin: 0 0 0 -24px;
+  box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+}
+/*image styling for bookshelf*/
+.slide-img,
+.staff-picks img,
+.staff-picks,
+#hero-imgs img {
+  width: 150px !important;
+  height: auto;
+  z-index: 3;
+  box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.23);
+  position: relative;
+  display: inline-block;
+  border-radius: 2px 7px 7px 2px;
+}
+.slide-img img {
+  position: relative;
+  z-index: 4;
+}
+.staff-picks {
+  margin: 0 auto;
+  display: inline-block;
+}
 
-      #hero-imgs img:hover {
-        transform: perspective(500) rotateY(0deg);
-      }
-      /* styling for slider */
+#hero-imgs img {
+  margin: 10px 0 -15px 10px;
+  transform: scale3d(1, 1, 1);
+  transition: 400ms ease-in;
+  transform-origin: 0, 50%;
+  transform: perspective(500) rotateY(10deg);
+  transition: 0.5s;
+}
 
-      .slide-img,
-      .staff-picks {
-        width: 150px;
-        height: 250px;
-        display: inline-block;
-        margin-top: 18px;
-        margin-bottom: -35px;
-      }
+#hero-imgs img:hover {
+  transform: perspective(500) rotateY(0deg);
+}
 
-      .slide-img {
-        margin-left: 10px;
-        background-position: center;
-        background-size: cover;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 1.5s;
-      }
+#staff-picks,
+#booktok,
+#hero {
+  margin-top: 50px;
+}
+/* styling for slider */
+/*had the .staff-picks*/
+.slide-img {
+  width: 150px;
+  height: 250px;
+  display: inline-block;
+  margin-top: 18px;
+  margin-bottom: -35px;
+}
 
-      .slide-img:hover {
-        box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
-      }
+.slide-img {
+  margin-left: 10px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1.5s;
+}
 
-      .slide-img a {
-        opacity: 0;
-        text-decoration: none;
-        transform: scale(0);
-        transition: 0.8s;
-        font-size: 0.75rem;
-        color: white;
-      }
-      .slide-img:hover a {
-        opacity: 1;
-        transform: scale(1);
-      }
+.slide-img:hover {
+  box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
 
-      .img-1 {
-        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/889/original/fourth-wing-bkcover.jpg?1689369270);
-      }
-      .img-2 {
-        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/890/original/day-of-fallen-night-bkcover.jpg?1689369280);
-      }
-      .img-3 {
-        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/900/original/house-of-roots-ruin-bkcover.jpg?1689369885);
-      }
-      .img-4 {
-        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/891/original/house-of-sky-breath-bkcover.jpg?1689369368);
-      }
-      .img-5 {
-        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/892/original/daughter-of-moon-goddess-bkcover.jpg?1689369409);
-      }
-      .img-6 {
-        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/893/original/song-of-achilles-bkcover.jpg?1689369430);
-      }
-      .img-7 {
-        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/894/original/midnightlibrary-bkcover.jpg?1689369443);
-      }
-      .img-8 {
-        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/895/original/divine-rivals-bkcover.jpg?1689369471);
-      }
-      .img-9 {
-        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/896/original/for-the-throne-bkcover.jpg?1689369502);
-      }
-      .img-10 {
-        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/897/original/time-convert-bkcover.jpg?1689369530);
-      }
-      .img-11 {
-        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/899/original/gilded-serpent-bkcover.jpg?1689369844);
-      }
-      .img-12 {
-        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/898/original/haunting-adeline-bkcover.jpg?1689369551);
-      }
-      @media screen and (min-width: 1024px) {
-        #booktok img {
-          width: 300px;
-          height: auto;
-        }
-      }
-      @media (max-width: 600px) {
-        .staff-picks {
-          max-width: 100px !important;
-          height: max-content;
-        }
-        .slide-img {
-          width: 95px !important;
-          height: 155px;
-        }
-      }
+.slide-img a {
+  opacity: 0;
+  text-decoration: none;
+  transform: scale(0);
+  transition: 0.8s;
+  font-size: 0.75rem;
+  color: white;
+}
+.slide-img:hover a {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.img-1 {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/889/original/fourth-wing-bkcover.jpg?1689369270);
+}
+.img-2 {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/890/original/day-of-fallen-night-bkcover.jpg?1689369280);
+}
+.img-3 {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/900/original/house-of-roots-ruin-bkcover.jpg?1689369885);
+}
+.img-4 {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/891/original/house-of-sky-breath-bkcover.jpg?1689369368);
+}
+.img-5 {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/892/original/daughter-of-moon-goddess-bkcover.jpg?1689369409);
+}
+.img-6 {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/893/original/song-of-achilles-bkcover.jpg?1689369430);
+}
+.img-7 {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/894/original/midnightlibrary-bkcover.jpg?1689369443);
+}
+.img-8 {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/895/original/divine-rivals-bkcover.jpg?1689369471);
+}
+.img-9 {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/896/original/for-the-throne-bkcover.jpg?1689369502);
+}
+.img-10 {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/897/original/time-convert-bkcover.jpg?1689369530);
+}
+.img-11 {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/899/original/gilded-serpent-bkcover.jpg?1689369844);
+}
+.img-12 {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/898/original/haunting-adeline-bkcover.jpg?1689369551);
+}
+@media (min-width: 1024px) {
+  #booktok img {
+    width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .staff-picks {
+    max-width: 100px !important;
+    height: max-content;
+  }
+  .slide-img {
+    /* width: 95px !important;
+    height: 155px; */
+  }
+}
