@@ -155,11 +155,6 @@ footer a:hover {
   display: inline-block;
   border-radius: 2px 7px 7px 2px;
 }
-.slide-img {
-  margin-bottom: -9px;
-  z-index: 3 !important;
-  position: relative;
-}
 
 .staff-picks {
   /* display: inline-flex;
@@ -186,11 +181,6 @@ footer a:hover {
   transform: perspective(500) rotateY(0deg);
 }
 
-#staff-picks,
-#booktok,
-#hero {
-  margin-top: 50px;
-}
 /* styling for slider */
 /*had the .staff-picks*/
 .slide-img {
@@ -271,15 +261,24 @@ footer a:hover {
     height: auto;
   }
 }
-@media (max-width: 600px) {
-  .slide-img {
-    width: 95px !important;
-    height: 155px;
-  }
-}
+
 @media (max-width: 414px) {
   .staff-picks img {
     max-width: 86px;
     height: auto;
+  }
+  .slide-img {
+    max-width: 30%;
+    height: 150px;
+  }
+}
+@media (max-width: 280px) {
+  .staff-picks img {
+    max-width: 54px;
+    height: auto;
+  }
+  .slide-img {
+    max-width: 30%;
+    height: 100px;
   }
 }
