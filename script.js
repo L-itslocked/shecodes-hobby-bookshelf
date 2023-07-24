@@ -23,7 +23,7 @@ let slider = tns({
     },
     480: {
       items: 2,
-      gutter: 10,
+      gutter: 5,
     },
   },
 });
