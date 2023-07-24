@@ -50,6 +50,27 @@ I learned how to create bookshelves with css styling. This is my first attempt a
 
 ### Useful Resources
 
+[Web Dev Tutorials] (https://www.youtube.com/watch?v=cmlkB3oaKOQ)
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+
+https://cdnjs.com/libraries/tiny-slider
+
+https://ganlanyuan.github.io/tiny-slider/?utm_source=cdnjs&utm_medium=cdnjs_link&utm_campaign=cdnjs_library#responsive-options
+
+### Inspired by
+
+https://dribbble.com/shots/16279204-Book-Web-Store-Concept
+
+https://dribbble.com/shots/16246812-Book-Store-Mobile-App
+
+[mburnette] https://codepen.io/mburnette/pres/kGYmvR/right
+
+[annampawl] https://codepen.io/annampawl/pen/rNJjowd
 
 ## Author
 
