@@ -1,7 +1,7 @@
 let slider = tns({
   container: ".my-slider",
   slideBy: "1",
-  speed: 400,
+  speed: 200,
   nav: false,
   autoplay: true,
   controls: false,
@@ -23,7 +23,7 @@ let slider = tns({
     },
     480: {
       items: 2,
-      gutter: 5,
+      gutter: 1,
     },
   },
 });
